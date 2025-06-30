@@ -5,16 +5,14 @@ export default function Hero() {
     <section
       id="home"
       className="relative h-screen bg-cover bg-center flex items-center justify-center text-center"
-  
     >
       <div className="absolute inset-0 bg-black overflow-hidden"></div>
-
-      <div className="relative z-10 text-white px-6">
-        <h1 className="text-6xl md:text-8xl font-bold leading-tight mb-3">
+    <div className="absolute top-0 left-0 right-0 z-20 px-6 pt-8">
+        <h1 className="text-6xl md:text-8xl font-bold leading-tight mb-3 text-white">
           Premium Mobile Detailing, <br />
            Delivered to You.
         </h1>
-        <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
+        <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto text-white">
           Time to Level Up. We Bring the Detail to Your Door. 
         </p>
         <a
@@ -23,7 +21,7 @@ export default function Hero() {
         >
           Book Now
         </a>
-      </div>
+      </div>  
     </section>
   );
 }

@@ -1,22 +1,21 @@
 import React, { useState } from 'react';
+import loGo from '../assets/logo.jpg';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-white shadow">
-      <div className="container mx-auto px-4 py-3 flex justify-between items-center">
-        <a href="/" className="text-2xl font-bold text-gradient-to-r from-red-500 to-purple-600">
-          VAS Detailing
-        </a>
+    <header className="top-0 left-0 w-full z-50 bg-white shadow">
+      <div className="container mx-auto px-4 py-3 flex justify-between items-center bg-black">
+        <img src={loGo}alt="Vas-logo" className="h-[2.3125rem] sm:h-20 md:h-[126px] md:w-[213px] object-contain" />
 
         <nav className="hidden md:flex gap-6 font-medium text-gray-800">
-          <a href="#home" className="hover:text-red-600">Home</a>
-          <a href="#about" className="hover:text-red-600">About</a>
-          <a href="#services" className="hover:text-red-600">Services</a>
-          <a href="#gallery" className="hover:text-red-600">Gallery</a>
-          <a href="#reviews" className="hover:text-red-600">Reviews</a>
-          <a href="#contact" className="hover:text-red-600">Contact</a>
+          <a href="#home" className="text-white hover:text-red-600">Home</a>
+          <a href="#about" className="text-white hover:text-red-600">About</a>
+          <a href="#services" className="text-white hover:text-red-600">Services</a>
+          <a href="#gallery" className="text-white hover:text-red-600">Gallery</a>
+          <a href="#reviews" className="text-white hover:text-red-600">Reviews</a>
+          <a href="#contact" className="text-white hover:text-red-600">Contact</a>
           <a href="#book" className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition">Book Now</a>
         </nav>
 
