@@ -1,60 +1,40 @@
-import { useState } from 'react';
-import axios from 'axios';
-import Toast from '../components/Toast.jsx';
+import React from 'react';
 
-export default function Contact() {
-  const [form, setForm] = useState({ name:'',email:'',message:'' });
-  const [toast, setToast] = useState(false);
-  const onChange = e => setForm({ ...form, [e.target.name]: e.target.value });
-  const onSubmit = async e => {
-    e.preventDefault();
-    await axios.post('/api/contact', form);
-    setForm({ name:'',email:'',message:'' });
-    setToast(true);
-  };
+export default function ContactBookingForm() {
   return (
-    <section className="container mx-auto py-16 max-w-lg">
-      <h1 className="text-4xl font-bold mb-6">Contact Us</h1>
-      <form onSubmit={onSubmit} className="space-y-4" aria-label="Contact form">
-        <label>
-          <span className="block">Name</span>
-          <input
-            name="name"
-            required
-            className="mt-1 block w-full rounded-md"
-            value={form.name}
-            onChange={onChange}
-          />
-        </label>
-        <label>
-          <span className="block">Email</span>
-          <input
-            name="email"
-            type="email"
-            required
-            className="mt-1 block w-full rounded-md"
-            value={form.email}
-            onChange={onChange}
-          />
-        </label>
-        <label>
-          <span className="block">Message</span>
-          <textarea
-            name="message"
-            required
-            rows="5"
-            className="mt-1 block w-full rounded-md"
-            value={form.message}
-            onChange={onChange}
-          />
-        </label>
-        <button
-          className="bg-primary text-white px-6 py-3 rounded-lg hover:bg-accent focus-visible:ring"
-        >
-          Send
-        </button>
-      </form>
-      <Toast show={toast} message="Message sent!" onClose={()=>setToast(false)} />
+    <section id="book" className="bg-white py-16 px-6">
+      <div className="container mx-auto max-w-4xl">
+        <h2 className="text-3xl font-bold text-red-500 mb-8 text-center">Book Now</h2>
+        <form className="grid gap-4">
+          <input type="text" placeholder="Full Name" className="input" />
+          <input type="email" placeholder="Email" className="input" />
+          <input type="tel" placeholder="Phone Number" className="input" />
+          <select className="input">
+            <option>Vehicle Type</option>
+            <option>Sedan</option>
+            <option>Small SUV</option>
+            <option>Truck</option>
+            <option>Large SUV</option>
+          </select>
+          <fieldset className="border p-4 rounded">
+            <legend className="text-sm text-gray-600">Service Type</legend>
+            <label className="block"><input type="checkbox" /> Full Detail</label>
+            <label className="block"><input type="checkbox" /> Interior Only</label>
+            <label className="block"><input type="checkbox" /> Exterior Only</label>
+          </fieldset>
+          <fieldset className="border p-4 rounded">
+            <legend className="text-sm text-gray-600">Add-ons</legend>
+            <label className="block"><input type="checkbox" /> Headlight Restoration</label>
+            <label className="block"><input type="checkbox" /> Engine Bay Cleaning</label>
+            <label className="block"><input type="checkbox" /> Pet Hair/Stain Removal</label>
+          </fieldset>
+          <input type="datetime-local" className="input" />
+          <textarea rows="4" placeholder="Comments" className="input" />
+          <button type="submit" className="bg-red-500 text-white py-3 px-6 rounded hover:bg-red-600">
+            Submit Request
+          </button>
+        </form>
+      </div>
     </section>
   );
 }

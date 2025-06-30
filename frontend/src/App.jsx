@@ -1,35 +1,38 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import Timeline from './components/Timeline';
+import Toast from './components/Toast';
+import About from './pages/About';
+import Services from './pages/Services';
+import Gallery from './pages/Gallery';
+import Reviews from './pages/Reviews';
+import heroMobile from './assets/heroMobile.jpg';
+import Contact from './pages/Contact';
+import Footer from './components/Footer';
 
-function App() {
-  const [count, setCount] = useState(0)
 
+export default function App() {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <div>
+      <Navbar />
+      <section id="home">
+        <Hero />
+      </section>
+    <section className="relative z-20 -mt-20">
+  <img
+    src={heroMobile}
+    alt="Red Chevrolet Camaro"
+    className="w-full object-cover"
+  />
+</section>
 
-export default App
+       <About />
+       <Services />
+        <Gallery />
+        <Reviews />
+        <Contact />
+        <Footer />
+    </div>
+  );
+}
