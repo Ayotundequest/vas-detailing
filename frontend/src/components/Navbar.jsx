@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <div className="bg-black w-full">
       <div className="mx-auto max-w-[1600px] px-4 sm:px-6 lg:px-8">
-        <div className="drawer drawer-end z-50">
+        <div className="drawer sm:drawer-mobile">
           <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
 
           {/* Navbar content */}
@@ -21,7 +21,7 @@ const Navbar = () => {
               </div>
 
               {/* Center Logo */}
-              <div className="flex-1 flex justify-center lg:order-2">
+              <div className="flex-1 flex lg:justify-center order-1 lg:order-2">
                 <img
                   src={logo}
                   alt="VAS Detailing Logo"
@@ -52,34 +52,68 @@ const Navbar = () => {
               </div>
 
               {/* Hamburger - Mobile */}
-              <div className="sm:hidden">
-                <label htmlFor="my-drawer-3" className="cursor-pointer">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="text-white text-2xl"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-                  </svg>
-                </label>
-              </div>
+              <button className="w-1/3 flex justify-end order-2 lg:order-3  sm:hidden">
+  <label htmlFor="my-drawer-3" aria-label="open sidebar">
+    <svg
+      stroke="currentColor"
+      fill="none"
+      strokeWidth="2"
+      viewBox="0 0 24 24"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="text-white text-xl m-1"
+      height="1em"
+      width="1em"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <line x1="4" x2="20" y1="12" y2="12" />
+      <line x1="4" x2="20" y1="6" y2="6" />
+      <line x1="4" x2="20" y1="18" y2="18" />
+    </svg>
+  </label>
+</button>
+
             </nav>
           </div>
 
           {/* Sidebar drawer */}
-          <div className="drawer-side sm:hidden">
-            <label htmlFor="my-drawer-3" className="drawer-overlay"></label>
-            <ul className="menu p-4 w-64 min-h-full bg-white text-gDark">
-              <li><a href="#" className="text-[#FF1744] font-bold">Home</a></li>
-              <li><a href="#about" className="hover:text-[#FF1744]">About</a></li>
-              <li><a href="#services" className="hover:text-[#FF1744]">Services</a></li>
-              <li><a href="#work" className="hover:text-[#FF1744]">Gallery</a></li>
-              <li><a href="#review" className="hover:text-[#FF1744]">Reviews</a></li>
-            </ul>
-          </div>
+          <div className="drawer-side mt-[61px] sm:hidden z-50">
+    <label htmlFor="my-drawer-3" aria-label="close sidebar" className="drawer-overlay"></label>
+    <ul className="menu min-h-full w-80 p-4 bg-white max-w-[200px]">
+      <div>
+        <a
+          href="#"
+          className="text-lg py-3 block cursor-pointer transition-colors font-poppins text-[#FF1744] font-bold"
+        >
+          Home
+        </a>
+        <a
+          href="#about"
+          className="text-lg py-3 block cursor-pointer font-normal transition-colors font-poppins text-gDark hover:text-[#FF1744]"
+        >
+          About
+        </a>
+        <a
+          href="#services"
+          className="text-lg py-3 block cursor-pointer font-normal transition-colors font-poppins text-gDark hover:text-[#FF1744]"
+        >
+          Services
+        </a>
+        <a
+          href="#work"
+          className="text-lg py-3 block cursor-pointer font-normal transition-colors font-poppins text-gDark hover:text-[#FF1744]"
+        >
+          Portfolio
+        </a>
+        <a
+          href="#review"
+          className="text-lg py-3 block cursor-pointer font-normal transition-colors font-poppins text-gDark hover:text-[#FF1744]"
+        >
+          Reviews
+        </a>
+      </div>
+    </ul>
+  </div>
         </div>
       </div>
     </div>

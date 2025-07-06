@@ -19,15 +19,16 @@ const Hero = () => {
         </Marquee>
 
         {/* Static Content Over Marquee */}
-        <div className="absolute top-0 left-0 right-0 z-20 px-6 pt-8">
-            <h1 className="text-6xl md:text-8xl font-bold leading-tight mb-3 text-white">
-               Premium Mobile Detailing, Delivered to You.
-            </h1>
-            <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto text-white">
-              Time to Level Up. We Bring the Detail to Your Door.
-            </p>
-          </div>
-
+        <div className="absolute top-[5%] left-0 right-0 z-20 px-6 text-center">
+  <h1 className="text-4xl sm:text-4xl md:text-8xl font-bold leading-tight mb-2 text-white">
+    {/* On mobile, no break inside "Premium Mobile Detailing," so no <br> here */}
+    Premium Mobile Detailing,<br className="hidden sm:block" />
+    Delivered to You.
+  </h1>
+  <p className="text-base sm:text-lg md:text-xl mb-6 max-w-2xl mx-auto text-white">
+    Time to Level Up. We Bring the Detail to Your Door.
+  </p>
+</div>
       </div>
 
       {/* Hero Images */}
