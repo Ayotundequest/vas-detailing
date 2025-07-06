@@ -1,69 +1,27 @@
 import React from "react";
-import logo from "../assets/logo.jpg"; 
+import logo from "../assets/logo.jpg";
 
 const Navbar = () => {
   return (
     <div className="bg-black w-full">
       <div className="mx-auto max-w-[1600px] px-4 sm:px-6 lg:px-8">
-        {/* Drawer wrapper */}
-        <div className="drawer">
+        <div className="drawer drawer-end z-50">
           <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
 
-          {/* Main Nav Content */}
-          <div className="drawer-content flex items-center justify-between">
-            <nav className="w-full flex items-center justify-between py-3 md:py-5">
-              {/* Left Nav (Links) - Desktop */}
-              {/* Hamburger Menu Button - Mobile */}
-            <button>
-              <label htmlFor="my-drawer-3" className="sm:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="text-white text-xl m-1"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={2}
-              >
-                <line x1="4" y1="6" x2="20" y2="6" />
-                <line x1="4" y1="12" x2="20" y2="12" />
-                <line x1="4" y1="18" x2="20" y2="18" />
-              </svg>
-            </label></button>
-              <div className="sm:flex items-center gap-4 hidden md:gap-10 order-2 lg:order-1">
-                <a
-                  href="#"
-                  className="text-lg cursor-pointer font-bold text-[#FF1744] font-poppins"
-                >
-                  Home
-                </a>
-                <a
-                  href="#about"
-                  className="text-lg cursor-pointer font-poppins text-white hover:text-[#FF1744]"
-                >
-                  About
-                </a>
-                <a
-                  href="#services"
-                  className="text-lg cursor-pointer font-poppins text-white hover:text-[#FF1744]"
-                >
-                  Services
-                </a>
-                <a
-                  href="#work"
-                  className="text-lg cursor-pointer font-poppins text-white hover:text-[#FF1744]"
-                >
-                  Gallery
-                </a>
-                <a
-                  href="#review"
-                  className="text-lg cursor-pointer font-poppins text-white hover:text-[#FF1744]"
-                >
-                  Reviews
-                </a>
+          {/* Navbar content */}
+          <div className="drawer-content flex flex-col">
+            <nav className="w-full flex items-center justify-between py-4">
+              {/* Left Nav - Desktop */}
+              <div className="hidden sm:flex items-center gap-4 md:gap-10 order-2 lg:order-1">
+                <a href="#" className="text-lg font-bold text-[#FF1744] font-poppins">Home</a>
+                <a href="#about" className="text-lg text-white hover:text-[#FF1744] font-poppins">About</a>
+                <a href="#services" className="text-lg text-white hover:text-[#FF1744] font-poppins">Services</a>
+                <a href="#work" className="text-lg text-white hover:text-[#FF1744] font-poppins">Gallery</a>
+                <a href="#review" className="text-lg text-white hover:text-[#FF1744] font-poppins">Reviews</a>
               </div>
 
               {/* Center Logo */}
-              <div className="flex-1 flex lg:justify-center order-1 lg:order-2">
+              <div className="flex-1 flex justify-center lg:order-2">
                 <img
                   src={logo}
                   alt="VAS Detailing Logo"
@@ -72,15 +30,15 @@ const Navbar = () => {
               </div>
 
               {/* Right Buttons - Desktop */}
-              <div className="lg:flex items-center gap-3 sm:gap-4 hidden order-3">
+              <div className="hidden lg:flex items-center gap-3 order-3">
                 <a href="#quote">
-                  <button className="flex items-center py-2 px-7 h-12 font-bold font-poppins text-white bg-red-600 hover:bg-red-700 text-lg md:text-base shadow-[3px_10px_25px_0px_#00000040] transition-colors">
+                  <button className="py-2 px-7 h-12 font-bold font-poppins text-white bg-red-600 hover:bg-red-700 shadow-md text-sm">
                     Book Now
                   </button>
                 </a>
                 <a href="#footer">
                   <button
-                    className="flex items-center py-2 px-7 h-12 font-bold font-poppins text-white text-lg md:text-base border bg-transparent"
+                    className="py-2 px-7 h-12 font-bold font-poppins text-white border text-sm"
                     style={{
                       borderWidth: "1px",
                       borderImage:
@@ -92,45 +50,34 @@ const Navbar = () => {
                   </button>
                 </a>
               </div>
+
+              {/* Hamburger - Mobile */}
+              <div className="sm:hidden">
+                <label htmlFor="my-drawer-3" className="cursor-pointer">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="text-white text-2xl"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                  </svg>
+                </label>
+              </div>
             </nav>
           </div>
 
-          {/* Drawer Sidebar - Mobile */}
-          <div className="drawer-side mt-[61px] sm:hidden z-50">
+          {/* Sidebar drawer */}
+          <div className="drawer-side sm:hidden">
             <label htmlFor="my-drawer-3" className="drawer-overlay"></label>
-            <ul className="menu w-80 max-w-[200px] p-4 bg-white min-h-full">
-              <div>
-                <a
-                  href="#"
-                  className="text-lg py-3 block cursor-pointer font-bold font-poppins text-[#FF1744]"
-                >
-                  Home
-                </a>
-                <a
-                  href="#about"
-                  className="text-lg py-3 block cursor-pointer font-normal font-poppins text-gDark hover:text-[#FF1744]"
-                >
-                  About
-                </a>
-                <a
-                  href="#services"
-                  className="text-lg py-3 block cursor-pointer font-normal font-poppins text-gDark hover:text-[#FF1744]"
-                >
-                  Services
-                </a>
-                <a
-                  href="#work"
-                  className="text-lg py-3 block cursor-pointer font-normal font-poppins text-gDark hover:text-[#FF1744]"
-                >
-                  Gallery
-                </a>
-                <a
-                  href="#review"
-                  className="text-lg py-3 block cursor-pointer font-normal font-poppins text-gDark hover:text-[#FF1744]"
-                >
-                  Reviews
-                </a>
-              </div>
+            <ul className="menu p-4 w-64 min-h-full bg-white text-gDark">
+              <li><a href="#" className="text-[#FF1744] font-bold">Home</a></li>
+              <li><a href="#about" className="hover:text-[#FF1744]">About</a></li>
+              <li><a href="#services" className="hover:text-[#FF1744]">Services</a></li>
+              <li><a href="#work" className="hover:text-[#FF1744]">Gallery</a></li>
+              <li><a href="#review" className="hover:text-[#FF1744]">Reviews</a></li>
             </ul>
           </div>
         </div>
