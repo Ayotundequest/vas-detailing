@@ -89,25 +89,25 @@ const Navbar = () => {
         </a>
         <a
           href="#about"
-          className="text-lg py-3 block cursor-pointer font-normal transition-colors font-poppins text-gDark hover:text-[#FF1744]"
+          className="text-lg py-3 block cursor-pointer font-normal transition-colors font-poppins text-gray-800 hover:text-[#FF1744]"
         >
           About
         </a>
         <a
           href="#services"
-          className="text-lg py-3 block cursor-pointer font-normal transition-colors font-poppins text-gDark hover:text-[#FF1744]"
+          className="text-lg py-3 block cursor-pointer font-normal transition-colors font-poppins text-gray-800 hover:text-[#FF1744]"
         >
           Services
         </a>
         <a
           href="#work"
-          className="text-lg py-3 block cursor-pointer font-normal transition-colors font-poppins text-gDark hover:text-[#FF1744]"
+          className="text-lg py-3 block cursor-pointer font-normal transition-colors font-poppins text-gray-800 hover:text-[#FF1744]"
         >
           Portfolio
         </a>
         <a
           href="#review"
-          className="text-lg py-3 block cursor-pointer font-normal transition-colors font-poppins text-gDark hover:text-[#FF1744]"
+          className="text-lg py-3 block cursor-pointer font-normal transition-colors font-poppins text-gray-800 hover:text-[#FF1744]"
         >
           Reviews
         </a>
