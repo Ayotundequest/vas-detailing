@@ -48,7 +48,7 @@ export default function Services() {
     <section id="services" className="md:mt-16 mt-6 max-w-[1600px] mx-auto">
       {/* Section Title and Description */}
       <div className="w-full px-4 mb-10">
-        <h2 className="text-[1.875rem] md:text-[4.25rem] font-bold text-center text-[#FF1744]c">
+        <h2 className="text-[1.875rem] md:text-[4.25rem] font-bold text-center text-[#FF1744]">
           Our Services
         </h2>
         <p className="text-gray-600 text-sm md:text-2xl max-w-[72.125rem] text-center mx-auto">
