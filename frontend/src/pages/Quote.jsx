@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import levelUPLeft from "../assets/levelUPLeft.svg"
 const Quote = () => {
   const [vehicleType, setVehicleType] = useState("");
 const [serviceType, setServiceType] = useState("");
@@ -191,11 +190,7 @@ const [serviceType, setServiceType] = useState("");
       </div>
 
       {/* Decorative Image */}
-      <img
-        src={levelUPLeft}
-        alt="decoration"
-        className="absolute left-0 top-[400px] -translate-y-1/2 hidden md:block -z-0"
-      />
+      
     </div>
   );
 };
