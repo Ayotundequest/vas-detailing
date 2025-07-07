@@ -11,7 +11,7 @@ const [serviceType, setServiceType] = useState("");
             <h2 className="text-[1.875rem] md:text-[4.25rem] font-bold text-[#FF1744]">
               Book Now
             </h2>
-            <p className="text-sm md:text-2xl max-w-[72.125rem] mx-auto text-gray-900 dark:bg-white dark:text-black">
+            <p className="text-sm md:text-2xl max-w-[72.125rem] mx-auto text-gray-900">
               Your next-level detail starts here. Request a free quote and we'll do the rest.
             </p>
           </div>
