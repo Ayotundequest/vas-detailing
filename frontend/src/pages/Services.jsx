@@ -51,7 +51,7 @@ export default function Services() {
         <h2 className="text-[1.875rem] md:text-[4.25rem] font-bold text-center text-[#FF1744]">
           Our Services
         </h2>
-        <p className="text-gray-600 text-sm md:text-2xl max-w-[72.125rem] text-center mx-auto">
+        <p className="text-gray-900 text-sm md:text-2xl max-w-[72.125rem] text-center mx-auto">
           We provide premium mobile detailing services throughout Strongsville and surrounding areas. Our packages are based on vehicle size and condition.
         </p>
       </div>

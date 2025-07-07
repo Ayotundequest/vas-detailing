@@ -19,7 +19,7 @@ const Gallery = () => {
             <h2 className="text-[1.875rem] md:text-[4.25rem] font-bold text-center text-[#FF1744]">
               Gallery
             </h2>
-            <p className="text-gray-700 text-sm md:text-2xl max-w-[72.125rem] text-center mx-auto">
+            <p className="text-gray-900 text-sm md:text-2xl max-w-[72.125rem] text-center mx-auto">
               At VAS Detailing, every vehicle we touch tells a story of precision, care, and transformation. Explore our portfolio to see the results for yourself.
             </p>
           </div>

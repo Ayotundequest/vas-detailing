@@ -89,7 +89,7 @@ const Reviews = () => {
             <h2 className="text-[1.875rem] md:text-[4.25rem] font-bold text-[#FF1744] text-center md:text-left">
               Client Reviews
             </h2>
-            <p className="text-sm md:text-2xl max-w-[72.125rem] mx-auto text-gray-700 text-center md:text-left">
+            <p className="text-sm md:text-2xl max-w-[72.125rem] mx-auto text-gray-900 text-center md:text-left">
               Our customers are at the heart of everything we do. See what real clients are saying about their experience with VAS Detailing and why they trust us to care for their vehicles every time.
             </p>
           </div>
