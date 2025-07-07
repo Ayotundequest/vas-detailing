@@ -89,24 +89,40 @@ const Navbar = () => {
         </a>
         <a
           href="#about"
+          onClick={() => {
+    const drawerCheckbox = document.getElementById("my-drawer-3");
+    if (drawerCheckbox) drawerCheckbox.checked = false;
+  }}
           className="text-lg py-3 block cursor-pointer font-normal transition-colors font-poppins text-gray-800 hover:text-[#FF1744]"
         >
           About
         </a>
         <a
           href="#services"
+          onClick={() => {
+    const drawerCheckbox = document.getElementById("my-drawer-3");
+    if (drawerCheckbox) drawerCheckbox.checked = false;
+  }}
           className="text-lg py-3 block cursor-pointer font-normal transition-colors font-poppins text-gray-800 hover:text-[#FF1744]"
         >
           Services
         </a>
         <a
           href="#work"
+          onClick={() => {
+    const drawerCheckbox = document.getElementById("my-drawer-3");
+    if (drawerCheckbox) drawerCheckbox.checked = false;
+  }}
           className="text-lg py-3 block cursor-pointer font-normal transition-colors font-poppins text-gray-800 hover:text-[#FF1744]"
         >
           Portfolio
         </a>
         <a
           href="#review"
+          onClick={() => {
+    const drawerCheckbox = document.getElementById("my-drawer-3");
+    if (drawerCheckbox) drawerCheckbox.checked = false;
+  }}
           className="text-lg py-3 block cursor-pointer font-normal transition-colors font-poppins text-gray-800 hover:text-[#FF1744]"
         >
           Reviews
