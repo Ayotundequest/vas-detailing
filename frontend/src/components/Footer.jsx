@@ -1,51 +1,67 @@
-import React from 'react';
+import React from "react";
+import footerLogo from "../assets/footerLogo.png";
+import footerBg from "../assets/footer.jpg"; 
 import instaGram from '../assets/instaGram.svg';
 import tikTok from '../assets/tikTok.svg';
 import faceBook from '../assets/facebook.svg';
 
-export default function Footer() {
+const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-10 px-6">
-      <div className="container mx-auto max-w-6xl grid md:grid-cols-3 gap-8">
-        {/* Branding */}
-        <div>
-          <h3 className="text-2xl font-bold text-red-500 mb-2">VAS Detailing</h3>
-          <p className="text-sm text-gray-300">“Time to Level Up”</p>
-          <p className="text-sm text-gray-400 mt-4">© {new Date().getFullYear()} VAS Detailing. All rights reserved.</p>
-        </div>
+    <div
+      id="footer"
+      className="mt-8 md:mt-[8.75rem] bg-cover py-8 px-3 md:py-[8.3125rem] text-[1.1875rem] md:text-2xl text-white"
+      style={{ backgroundImage: `url(${footerBg})` }}
+    >
+      <div className="mx-auto max-w-[1600px] px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col items-center md:flex-row gap-10 md:items-start justify-between mx-auto max-w-[1082px]">
+          {/* Logo & Info */}
+          <div>
+            <img src={footerLogo} alt="footer logo" className="w-[11.3125rem] mx-auto md:mx-0" />
+            <p className="text-center md:text-left">VAS Detailing © 2025</p>
+            <div className="flex gap-10 text-[48px] md:text-[56px] mt-4 justify-center md:justify-start">
+              <a href="https://www.facebook.com/share/15bAz3n1Ar/">
+                <img src={faceBook} alt="Facebook" className="h-6 w-6" />
+              </a>
+              <a href="https://www.tiktok.com/@vas_detailing">
+                <img src={tikTok} alt="Instagram" className="h-6 w-6" />
+              </a>
+              <a href="https://www.instagram.com/vas_detailingllc">
+                <img src={instaGram}alt="TikTok" className="h-6 w-6" />
+              </a>
+            </div>
+          </div>
 
-        {/* Quick Links */}
-        <div>
-          <h4 className="text-lg font-semibold mb-3">Quick Links</h4>
-          <ul className="space-y-2 text-sm">
-            <li><a href="#home" className="hover:text-red-400">Home</a></li>
-            <li><a href="#about" className="hover:text-red-400">About</a></li>
-            <li><a href="#services" className="hover:text-red-400">Services</a></li>
-            <li><a href="#gallery" className="hover:text-red-400">Gallery</a></li>
-            <li><a href="#reviews" className="hover:text-red-400">Reviews</a></li>
-            <li><a href="#book" className="hover:text-red-400">Book Now</a></li>
-          </ul>
-        </div>
+          {/* Company Links */}
+          <div>
+            <h3 className="md:text-[1.875rem] text-2xl font-bold">Company</h3>
+            <div className="flex flex-col gap-2 md:gap-5 mt-5 text-center md:text-left">
+              <a href="#about">About Us</a>
+              <a href="#services">Services</a>
+              <a href="#work">Portfolio</a>
+              <a href="#review">Reviews</a>
+              <a href="#quote">Book Now</a>
+            </div>
+          </div>
 
-        {/* Contact + Social */}
-        <div>
-          <h4 className="text-lg font-semibold mb-3">Contact</h4>
-          <p className="text-sm text-gray-300">Phone: <a href="tel:2165070503" className="hover:text-red-400">216-507-0503</a></p>
-          <p className="text-sm text-gray-300">Email: <a href="mailto:vasdetailingllc@gmail.com" className="hover:text-red-400">vasdetailingllc@gmail.com</a></p>
-
-          <div className="flex gap-4 mt-4">
-            <a href="https://www.instagram.com/vas_detailingllc/profilecard/?igsh=Z3lpaDlhbHNuYzZy" target="_blank" rel="noreferrer">
-              <img src={instaGram} alt="Instagram" className="h-6 w-6" />
-            </a>
-            <a href="https://www.tiktok.com/@vas_detailing?_t=ZT-8wlGrs7mULj&_r=1" target="_blank" rel="noreferrer">
-              <img src={tikTok}alt="TikTok" className="h-6 w-6" />
-            </a>
-            <a href="https://www.facebook.com/share/15bAz3n1Ar/" target="_blank" rel="noreferrer">
-              <img src={faceBook} alt="Facebook" className="h-6 w-6" />
-            </a>
+          {/* Contact */}
+          <div className="text-center md:text-left">
+            <h3 className="md:text-[1.875rem] text-2xl font-bold">Contact Us</h3>
+            <div className="flex flex-col gap-2 md:gap-5 mt-5">
+              <a href="tel:+12165070503" className="flex items-start justify-center md:justify-start gap-3">
+                📞 <span>+1 216-507-0503</span>
+              </a>
+              <a href="mailto:vasdetailingllc@gmail.com" className="flex items-start justify-center md:justify-start gap-3">
+                ✉️ <span>vasdetailingllc@gmail.com</span>
+              </a>
+              <a href="https://maps.google.com/?q=Strongsville,Ohio" className="flex items-start justify-center md:justify-start gap-3">
+                📍 <span>Strongsville, Ohio + 30-mile radius</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </footer>
+    </div>
   );
-}
+};
+
+export default Footer;

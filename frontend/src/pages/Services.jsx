@@ -48,7 +48,7 @@ export default function Services() {
     <section id="services" className="md:mt-16 mt-6 max-w-[1600px] mx-auto">
       {/* Section Title and Description */}
       <div className="w-full px-4 mb-10">
-        <h2 className="text-[1.875rem] md:text-[4.25rem] font-bold text-center text-red-500">
+        <h2 className="text-[1.875rem] md:text-[4.25rem] font-bold text-center text-[#FF1744]">
           Our Services
         </h2>
         <p className="text-gray-600 text-sm md:text-2xl max-w-[72.125rem] text-center mx-auto">
@@ -106,7 +106,7 @@ export default function Services() {
               {/* CTA button */}
               <div className="mt-12 w-full">
                 <a href="#quote">
-                  <button className="flex justify-between items-center py-2 px-[1.5625rem] h-[3.3125rem] mx-auto md:mx-0 font-bold font-poppins rounded bg-red-600 text-white transition-colors hover:bg-red-700 shadow-[3px_10px_25px_0px_#00000040] focus:outline-none">
+                  <button className="flex justify-between items-center py-2 px-[1.5625rem] h-[3.3125rem] mx-auto md:mx-0 font-bold font-poppins rounded bg-[#FF1744] text-white transition-colors hover:bg-red-700 shadow-[3px_10px_25px_0px_#00000040] focus:outline-none">
                     <span className="btn-text">Book Now</span>
                     <svg
                       viewBox="0 0 512 512"
@@ -182,7 +182,7 @@ export default function Services() {
   {/* CTA Button */}
   <div className="mt-12">
     <a href="#quote">
-      <button className="flex justify-between items-center py-2 px-[1.5625rem] h-[3.3125rem] mx-auto font-bold font-poppins rounded bg-red-500 text-white transition-colors hover:bg-red-700 shadow-[3px_10px_25px_0px_#00000040] focus:outline-none text-[1.1875rem]">
+      <button className="flex justify-between items-center py-2 px-[1.5625rem] h-[3.3125rem] mx-auto font-bold font-poppins rounded bg-[#FF1744] text-white transition-colors hover:bg-red-700 shadow-[3px_10px_25px_0px_#00000040] focus:outline-none text-[1.1875rem]">
         <span className="btn-text">Book Now</span>
         <svg
           viewBox="0 0 512 512"

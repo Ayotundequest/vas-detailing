@@ -16,10 +16,10 @@ const Gallery = () => {
       <div className="relative z-20">
         <div className="mx-auto max-w-[1600px] px-4 sm:px-6 lg:px-8">
           <div className="w-full" data-aos="fade-up">
-            <h2 className="text-[1.875rem] md:text-[4.25rem] font-bold text-center text-red-500">
+            <h2 className="text-[1.875rem] md:text-[4.25rem] font-bold text-center text-[#FF1744]">
               Gallery
             </h2>
-            <p className="text-gNormal text-sm md:text-2xl max-w-[72.125rem] text-center mx-auto">
+            <p className="text-gray-700 text-sm md:text-2xl max-w-[72.125rem] text-center mx-auto">
               At VAS Detailing, every vehicle we touch tells a story of precision, care, and transformation. Explore our portfolio to see the results for yourself.
             </p>
           </div>

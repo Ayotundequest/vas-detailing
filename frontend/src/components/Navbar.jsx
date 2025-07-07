@@ -32,7 +32,7 @@ const Navbar = () => {
               {/* Right Buttons - Desktop */}
               <div className="hidden lg:flex items-center gap-3 order-3">
                 <a href="#quote">
-                  <button className="py-2 px-7 h-12 font-bold font-poppins text-white bg-red-600 hover:bg-red-700 shadow-md text-sm">
+                  <button className="py-2 px-7 h-12 font-bold font-poppins text-white bg-[#FF1744] hover:bg-red-700 shadow-md text-sm">
                     Book Now
                   </button>
                 </a>
