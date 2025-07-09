@@ -5,7 +5,7 @@ import Marquee from "react-fast-marquee";
 
 const Hero = () => {
   return (
-    <div className="bg-gradient-to-b from-[#29292a] to-[#1b1b1b] overflow-hidden relative">
+    <div className="bg-gradient-to-b from-[#2a2a2b] to-[#272626] overflow-hidden relative">
       {/* Marquee Section */}
       <div className="text-center font-poppins md:font-montserrat relative">
         <Marquee
@@ -13,7 +13,7 @@ const Hero = () => {
           gradient={false}
           className="overflow-hidden h-[199px] md:h-[340px] pt-[120px] md:pt-[100px]"
         >
-          <h1 className="font-montserrat font-bold text-[70px] md:text-[250px] leading-none bg-gradient-to-b from-[#121212] via-[#121212] to-[#262626] bg-clip-text text-transparent whitespace-nowrap">
+          <h1 className="font-montserrat font-bold text-[70px] md:text-[250px] leading-none bg-gradient-to-b from-[#282626] via-[#121212] to-[#262626] bg-clip-text text-transparent whitespace-nowrap">
             TIME TO LEVEL UP &nbsp;
           </h1>
         </Marquee>
