@@ -5,7 +5,7 @@ import Marquee from "react-fast-marquee";
 
 const Hero = () => {
   return (
-    <div className="bg-black overflow-hidden relative">
+    <div className="bg-gradient-to-b from-[#29292a] to-[#1b1b1b] overflow-hidden relative">
       {/* Marquee Section */}
       <div className="text-center font-poppins md:font-montserrat relative">
         <Marquee
@@ -13,14 +13,14 @@ const Hero = () => {
           gradient={false}
           className="overflow-hidden h-[199px] md:h-[340px] pt-[120px] md:pt-[100px]"
         >
-          <h1 className="font-montserrat font-bold text-[70px] md:text-[282px] leading-none bg-gradient-to-b from-[#121212] via-[#121212] to-[#262626] bg-clip-text text-transparent whitespace-nowrap">
+          <h1 className="font-montserrat font-bold text-[70px] md:text-[250px] leading-none bg-gradient-to-b from-[#121212] via-[#121212] to-[#262626] bg-clip-text text-transparent whitespace-nowrap">
             TIME TO LEVEL UP &nbsp;
           </h1>
         </Marquee>
 
         {/* Static Content Over Marquee */}
         <div className="absolute top-[5%] left-0 right-0 z-20 px-6 text-center">
-  <h1 className="text-lg sm:text-5xl md:text-7xl font-bold text-white text-center whitespace-nowrap overflow-hidden text-ellipsis leading-snug tracking-wide">
+  <h1 className="text-lg sm:text-6xl md:text-7xl font-bold text-white text-center whitespace-nowrap overflow-hidden text-ellipsis leading-snug tracking-wide">
         Premium Mobile Detailing,<br />
     Delivered to You.
   </h1>
@@ -30,7 +30,7 @@ const Hero = () => {
 </div>
       </div>
 
-      <div style={{ height: "20px" }}></div>
+      <div style={{ height: "30px" }}></div>
 
 
       {/* Hero Images */}

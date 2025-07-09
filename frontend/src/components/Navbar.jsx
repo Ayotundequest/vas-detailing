@@ -1,9 +1,9 @@
 import React from "react";
-import logo from "../assets/logo.jpg";
+import logo from "../assets/logo.png";
 
 const Navbar = () => {
   return (
-    <div className="bg-black w-full">
+    <div className="bg-gradient-to-b from-[#2a2a2b] to-[#272626] w-full">
       <div className="mx-auto max-w-[1600px] px-4 sm:px-6 lg:px-8">
         <div className="drawer sm:drawer-mobile">
           <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
@@ -50,7 +50,7 @@ const Navbar = () => {
                   </button>
                 </a>
               </div>
-
+                      <div style={{ height: "50px" }}></div>
               {/* Hamburger - Mobile */}
               <button className="w-1/3 flex justify-end order-2 lg:order-3  sm:hidden">
   <label htmlFor="my-drawer-3" aria-label="open sidebar">
