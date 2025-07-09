@@ -30,7 +30,7 @@ const Hero = () => {
 </div>
       </div>
 
-      <div style={{ height: "30px" }}></div>
+      <div style={{ height: "10px" }}></div>
 
 
       {/* Hero Images */}
