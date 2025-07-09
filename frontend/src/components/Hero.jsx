@@ -13,7 +13,7 @@ const Hero = () => {
           gradient={false}
           className="overflow-hidden h-[199px] md:h-[340px] pt-[50px] md:pt-[100px]"
         >
-          <h1 className="font-montserrat font-bold text-[95px] md:text-[250px] leading-none bg-gradient-to-b from-[#282626] via-[#121212] to-[#262626] bg-clip-text text-transparent whitespace-nowrap">
+          <h1 className="font-montserrat font-bold text-[75px] md:text-[250px] leading-none bg-gradient-to-b from-[#2e2d2d] via-[#121212] to-[#2b2a2a] bg-clip-text text-transparent whitespace-nowrap">
             TIME TO LEVEL UP &nbsp;
           </h1>
         </Marquee>
